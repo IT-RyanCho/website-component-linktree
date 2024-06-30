@@ -1,6 +1,6 @@
-.item-group-border {
+/* .item-group-border {
     border: 2px solid #191919;
-}
+} */
 .mb-0 {
     font-size: 1rem;
     font-weight: 1000;
@@ -15,7 +15,6 @@ h6, span {
 
 .color-background{
 	background: #4527A0;
-
 }
 
 .list-group-item{
@@ -57,4 +56,13 @@ h6, span {
 
 body {
 	font-family: "Open Sans", sans-serif;
+}
+
+.modal-content {
+	background: url(../images/download-background-black.png) center center no-repeat;
+	background-size: cover;	  
+}
+
+.modal-content .modal-header {
+	opacity: 0.85;
 }
