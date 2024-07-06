@@ -1,178 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- reference: https://bbbootstrap.com/snippets/bootstrap-folder-list-checkbox-and-transform-effect-16091735# -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Component | Link Tree Modal</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Component - Link Tree</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/custom.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="row d-flex align-items-center justify-content-center" style="height: 100vh;">
-            <div class="col-auto">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-dark px-5 color-background" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <i class="bi bi-share-fill"></i> Open linktree modal
-                </button>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header item-group-border p-2 bg-dark">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-11  d-flex justify-content-center align-items-center">
-                                        <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel"
-                                            style="font-weight: 5000;"><i class="fa-solid fa-map"></i>&ensp;Website Link</h1>
-
-                                    </div>
-                                    <div class="col-1  d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-close btn-close-white " data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="modal-body  item-group-border">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <a class="list-group-item d-flex justify-content-between align-content-center"
-                                            href="https://getbootstrap.com/docs/5.0/components/buttons/"
-                                            target="_blank">
-
-                                            <div class="d-flex flex-row">
-                                                <i class="bi bi-geo-alt-fill text-white px-2" width="32"
-                                                    height="32"></i>
-                                                <div class="ml-2">
-                                                    <h6 class="mb-0">Coursera</h6>
-                                                    <div class="about">
-                                                        <span><i class="fa-solid fa-link-simple"></i>coursera.org<br></span>
-                                                        <span>Offers online courses and degrees from top universities
-                                                            and companies.<br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">
-                                        <a class="list-group-item d-flex justify-content-between align-content-center"
-                                            href="https://getbootstrap.com/docs/5.0/components/buttons/"
-                                            target="_blank">
-
-                                            <div class="d-flex flex-row">
-                                                <i class="bi bi-geo-alt-fill text-white px-2" width="32"
-                                                    height="32"></i>
-                                                <div class="ml-2">
-                                                    <h6 class="mb-0"> Medium</h6>
-                                                    <div class="about">
-                                                        <span>medium.com<br></span>
-                                                        <span>A platform for writers and readers to share and discover
-                                                            articles on any topic.<br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                    <div class="col">
-                                        <a class="list-group-item d-flex justify-content-between align-content-center"
-                                            href="https://getbootstrap.com/docs/5.0/components/buttons/"
-                                            target="_blank">
-
-                                            <div class="d-flex flex-row">
-                                                <i class="bi bi-geo-alt-fill text-white px-2" width="32"
-                                                    height="32"></i>
-                                                <div class="ml-2">
-                                                    <h6 class="mb-0">Khan Academy</h6>
-                                                    <div class="about">
-                                                        <span>khanacademy.org<br></span>
-                                                        <span>Provides free educational resources and lessons for
-                                                            students of all ages.<br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">
-                                        <a class="list-group-item d-flex justify-content-between align-content-center"
-                                            href="https://getbootstrap.com/docs/5.0/components/buttons/"
-                                            target="_blank">
-
-                                            <div class="d-flex flex-row">
-                                                <i class="bi bi-geo-alt-fill text-white px-2" width="32"
-                                                    height="32"></i>
-                                                <div class="ml-2">
-                                                    <h6 class="mb-0">Stack Overflow</h6>
-                                                    <div class="about">
-                                                        <span>stackoverflow.com<br></span>
-                                                        <span>A Q&A site for programmers to get coding help and share
-                                                            knowledge.<br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                    <div class="col">
-                                        <a class="list-group-item d-flex justify-content-between align-content-center"
-                                            href="https://getbootstrap.com/docs/5.0/components/buttons/"
-                                            target="_blank">
-
-                                            <div class="d-flex flex-row">
-                                                <i class="bi bi-geo-alt-fill text-white px-2" width="32"
-                                                    height="32"></i>
-                                                <div class="ml-2">
-                                                    <h6 class="mb-0">National Geographic</h6>
-                                                    <div class="about">
-                                                        <span>nationalgeographic.com<br></span>
-                                                        <span>Features articles, videos, and photos about nature,
-                                                            science, and culture.<br></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
+  <body>
+    <div class="container-xl bg-light">
+      <div
+        class="row d-flex align-items-center justify-content-center"
+        style="height: 100vh"
+      >
+        <div class="col-auto">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-dark px-5 shadow-sm bg-primary rounded-1 border-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="fa-solid fa-up-right-from-square"></i> Open Modal
+          </button>
         </div>
-    </div>
-</body>
 
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header item-group-border p-2">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div
+                      class="col-11 d-flex justify-content-center align-items-center"
+                    >
+                      <h1
+                        class="modal-title fs-5 text-white fw-bold"
+                        id="exampleModalLabel"
+                        style="font-weight: 5000"
+                      >
+                        <i
+                          class="fa-solid fa-map-location-dot bg-primary p-2 rounded-circle"
+                        ></i>
+                        Website Link
+                      </h1>
+                    </div>
+                    <div
+                      class="col-1 d-flex justify-content-center align-items-center"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal-body item-group-border">
+                <div class="container">
+                  <!-- row (one item) -->
+                  <div class="row">
+                    <div class="col-12">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- row (two item) -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- row (three item) -->
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4">
+                      <a
+                        class="list-group-item d-flex justify-content-between align-content-center"
+                        href="https://test.com/"
+                        target="_blank"
+                      >
+                        <div class="d-flex flex-row">
+                          <i
+                            class="fa-solid fa-location-dot text-white px-2"
+                            width="32"
+                            height="32"
+                          ></i>
+                          <div class="ml-2">
+                            <h6 class="mb-0">Test Website</h6>
+                            <div class="about">
+                              <span
+                                ><i class="fa-solid fa-link-simple"></i
+                                ><i class="fa-solid fa-square text-secondary"></i> test.com<br
+                              /></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
