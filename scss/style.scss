@@ -63,3 +63,9 @@ body {
 .modal-content .modal-header {
 	opacity: 0.85;
 }
+
+.btn-primary {
+	&:hover {
+		background-color: var(--bs-secondary);
+	}
+}
